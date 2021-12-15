@@ -24,7 +24,7 @@ def predict():
     prediction = regressor.predict([final_features])[0]
     print(prediction)
     
-    return render_template('index.html',prediction_text='The Cost Per Click of your AD: {}'.format(prediction))
+    return render_template('index.html',prediction_text='The Cost Per Click of your AD:$ {}'.format(prediction))
 
 
 if __name__ == "__main__":
